@@ -1,7 +1,10 @@
 import { Container, Row, Col, Breadcrumb } from "react-bootstrap";
 import Sidebar from "./components/sidebar";
 import Header from "./components/header";
+import Datatables from "./components/datatables";
 import './App.css'
+
+import { data, dataSet } from './utils'
 
 function App() {
   return (
@@ -18,8 +21,8 @@ function App() {
                 <Breadcrumb.Item>Master Data Management</Breadcrumb.Item>
                 <Breadcrumb.Item active>Fee Type</Breadcrumb.Item>
               </Breadcrumb>
-
               <h2 className="title">Fee Type</h2>
+              <Datatables data={data}/>
             </div>
           </Col>
         </Row>
