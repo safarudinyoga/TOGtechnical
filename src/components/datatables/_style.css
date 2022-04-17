@@ -184,6 +184,10 @@ thead tr th {
   font-weight: 500 !important;
 }
 
+tbody tr td {
+  border: none !important;
+}
+
 .m-r-10 {
   margin-right: 10px;
 }

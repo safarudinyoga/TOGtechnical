@@ -5,7 +5,7 @@ import './_style.css'
 const $  = require('jquery');
 $.Datatable = require('datatables.net');
 
-const Datatables = ({data}) => {
+const Datatables = ({ data }) => {
 
   const ref = useRef(null)
 
@@ -24,16 +24,18 @@ const Datatables = ({data}) => {
         },
         {
           targets: 1,
-          title: "Fee Type Code"
+          title: "Fee Type Code",
+          width: "13%"
         },
         {
           targets: 2,
-          title: "Fee Type Name"
+          title: "Fee Type Name",
+          width: "13%"
         },
         {
           targets: 3,
           title: "Description",
-          width: '30%'
+          width: '40%'
         },
         {
           targets: 4,

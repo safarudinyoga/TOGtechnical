@@ -13,7 +13,6 @@ const Sidebar = props => {
         className="d-none d-md-block sidebar"
         defaultActiveKey='1'
         onSelect={selectedKey => {
-          console.log(selectedKey);
           setActive(selectedKey)
         }}
       >
